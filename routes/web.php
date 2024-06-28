@@ -14,19 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $data = [
-        "title" => "Benvenuto in Homepage",
-        "subtitle" => "Questa è la homepage del progetto Laravel Comics",
-        "author" => "Realizzato da Davide"
-    ];
-    return view('home', $data);
+    return view('home', config('store'));
 });
 
 Route::get('/home', function () {
-    $data = [
-        "title" => "Benvenuto in Homepage",
-        "subtitle" => "Questa è la homepage del progetto Laravel Comics",
-        "author" => "Realizzato da Davide"
-    ];
-    return view('home', $data);
+    return view('home', config('store'));
 });
