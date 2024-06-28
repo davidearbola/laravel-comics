@@ -1,0 +1,16 @@
+img {
+    width: 3rem;
+}
+
+a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    padding: 2rem 0;
+    border-bottom: 2px solid white;
+}
+
+a:hover {
+    border-bottom: 2px solid blue;
+    box-sizing: border-box;
+}
