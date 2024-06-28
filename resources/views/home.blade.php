@@ -7,8 +7,8 @@
     <title>Laravel comics</title>
 </head>
 <body>
-    <h1>{{ $title }}</h1>
-    <h3>{{ $subtitle }}</h3>
-    <p>{{ $author }}</p>
+    <h1>{{ $comics[0]['title'] }}</h1>
+    <p>{{ $comics[0]['description'] }}</p>
+    <img src="{{ $comics[0]['thumb'] }}">
 </body>
 </html>
