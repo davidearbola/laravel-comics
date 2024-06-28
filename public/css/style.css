@@ -11,7 +11,7 @@ header img {
     width: 3rem;
 }
 
-header a {
+#linkMenu a {
     font-size: 14px;
     text-decoration: none;
     color: black;
@@ -19,7 +19,7 @@ header a {
     border-bottom: 2px solid white;
 }
 
-header a:hover {
+#linkMenu a:hover {
     border-bottom: 2px solid blue;
     box-sizing: border-box;
 }
