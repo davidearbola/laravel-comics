@@ -7,9 +7,9 @@
     <title>Laravel Comics</title>
 </head>
 <body>
-    <p>Questa è la Homepage</p>
-    <h1>{{ $comics[0]['title'] }}</h1>
-    <p>{{ $comics[0]['description'] }}</p>
-    <img src="{{ $comics[0]['thumb'] }}">
+    <p>Questa è la pagina About</p>
+    <h1>{{ $comics[1]['title'] }}</h1>
+    <p>{{ $comics[1]['description'] }}</p>
+    <img src="{{ $comics[1]['thumb'] }}">
 </body>
 </html>
