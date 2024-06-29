@@ -1,3 +1,5 @@
+/* General css */
+
 .my_box_container {
     max-width: 1200px;
     margin: 0 auto;
@@ -6,6 +8,8 @@
 .my_bg_blue {
     background-color: #1e82f6;
 }
+
+/* Header css */
 
 header img {
     width: 3rem;
@@ -24,11 +28,15 @@ header img {
     box-sizing: border-box;
 }
 
+/* Jumbotron css */
+
 .jumbotron {
     background-image: url("/images/jumbotron.jpg");
     height: 30rem;
     background-position: top;
 }
+
+/* IconDC css */
 
 #iconDc img {
     height: 2rem;
@@ -39,6 +47,8 @@ header img {
     background-size: cover;
     color: lightgray;
 }
+
+/* Link Footer css */
 
 #linkFooter .logo_box {
     background-image: url("/images/dc-logo-bg.png");
@@ -57,6 +67,8 @@ header img {
     color: lightgray;
     font-size: 12px;
 }
+
+/* Social Footer */
 
 .box_social {
     background-color: #303030;
@@ -77,6 +89,8 @@ header img {
 #socialFooter img {
     height: 2rem;
 }
+
+/* Card css */
 
 .full_box {
     background-color: #222;

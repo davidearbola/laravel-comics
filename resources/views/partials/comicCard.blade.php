@@ -4,7 +4,7 @@
             @foreach ($comics as $comic)
                 <div id="comicCard" class="col-6 col-md-4 col-lg-2 p-2">
                     <div class="mb-3">
-                        <img src="{{ $comic['thumb'] }}" alt="" />
+                        <a href="{{ url($comic['link']) }}"><img src="{{ $comic['thumb'] }}" alt="" /></a>
                     </div>
                     <div>
                         <p class="mb-0">{{ $comic['series'] }}</p>
