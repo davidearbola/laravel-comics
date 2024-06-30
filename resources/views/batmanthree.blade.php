@@ -19,17 +19,7 @@
         <div class="full_box">
             <div class="my_box_container py-5">
                 <div class="row">
-                    <div class="col-5">
-                        <img class="w-100" src="{{ $comics[9]['thumb'] }}">
-                    </div>
-                    <div class="col-7">
-                        <h3>{{ $comics[9]['title'] }}</h3>
-                        <p>{{ $comics[9]['description'] }}</p>
-                        <p>{{ $comics[9]['price'] }}</p>
-                        <span>{{ $comics[9]['series'] }}</span><br>
-                        <span>{{ $comics[9]['sale_date'] }}</span><br>
-                        <span>{{ $comics[9]['type'] }}</span><br>
-                    </div>
+                    @include('partials.comicPage', $comics[9])
                 </div>
             </div>
         </div>
