@@ -21,10 +21,6 @@ Route::get('/home', function () {
     return view('home', config('store'));
 });
 
-Route::get('/about', function () {
-    return view('about', config('store'));
-});
-
 Route::get('/actioncomic', function () {
     return view('actioncomic', config('store'));
 });
