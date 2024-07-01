@@ -20,8 +20,15 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home', config('store'));
 });
+Route::get('/comics', function () {
+    return view('home', config('store'));
+});
 
 Route::get('/comics/{indice}', function ($indice) {
     $fumetto = config("store.comics");
-    return view("comic", $fumetto[$indice], config('store'));
+    if ($indice < count($fumetto) && $indice >= 0) {
+        return view("comic", $fumetto[$indice], config('store'));
+    } else {
+        abort(404);
+    }
 })->name('comic');
