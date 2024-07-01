@@ -1,22 +1,15 @@
 <div id="comicCardMain" class="full_box">
-    <div class="my_box_container py-5 position-relative">
-        <div class="row mb-5">
+    <div class="my_box_container py-3 position-relative">
+        <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+            slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+            coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
             @foreach ($comics as $indice => $comic)
-                <div id="comicCard" class="col-6 col-md-4 col-lg-2 p-2">
-                    <div class="mb-3">
-                        <a href="{{ route('comic', $indice) }}"><img src="{{ $comic['thumb'] }}" alt="" /></a>
-                    </div>
-                    <div>
-                        <p class="mb-0">{{ $comic['series'] }}</p>
-                        <span>{{ $comic['type'] }}</span><br />
-                        <span>{{ $comic['price'] }}</span><br />
-                    </div>
-                </div>
+                <swiper-slide>
+                    <a href="{{ route('comic', $indice) }}"><img src="{{ $comic['thumb'] }}" alt="" /></a>
+                    <h3 class="mb-0">{{ $comic['title'] }}</h3>
+                </swiper-slide>
             @endforeach
-        </div>
-        <div class="comic_label">CURRENT SERIES</div>
-        <div class="text-center">
-            <span class="comic_button">LOAD MORE</span>
-        </div>
+        </swiper-container>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     </div>
 </div>
