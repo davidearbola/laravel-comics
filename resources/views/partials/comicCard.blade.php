@@ -1,10 +1,10 @@
 <div id="comicCardMain" class="full_box">
     <div class="my_box_container py-5 position-relative">
         <div class="row mb-5">
-            @foreach ($comics as $comic)
+            @foreach ($comics as $indice => $comic)
                 <div id="comicCard" class="col-6 col-md-4 col-lg-2 p-2">
                     <div class="mb-3">
-                        <a href="{{ url($comic['link']) }}"><img src="{{ $comic['thumb'] }}" alt="" /></a>
+                        <a href="{{ route('comic', $indice) }}"><img src="{{ $comic['thumb'] }}" alt="" /></a>
                     </div>
                     <div>
                         <p class="mb-0">{{ $comic['series'] }}</p>

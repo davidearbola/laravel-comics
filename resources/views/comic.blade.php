@@ -19,7 +19,7 @@
         <div class="full_box">
             <div class="my_box_container py-5">
                 <div class="row">
-                    @include('partials.comicPage', $comics[9])
+                    @include('partials.comicPage')
                 </div>
             </div>
         </div>
