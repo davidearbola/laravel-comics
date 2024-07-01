@@ -26,7 +26,7 @@ Route::get('/comics', function () {
 
 Route::get('/comics/{indice}', function ($indice) {
     $fumetto = config("store.comics");
-    if ($indice < count($fumetto) && $indice >= 0) {
+    if (array_key_exists($indice, $fumetto)) {
         return view("comic", $fumetto[$indice], config('store'));
     } else {
         abort(404);
