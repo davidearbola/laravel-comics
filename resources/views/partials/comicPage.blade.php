@@ -7,10 +7,10 @@
             <div class="col-7">
                 <h3>{{ $title }}</h3>
                 <p>{{ $description }}</p>
-                <p>{{ $price }}</p>
-                <span>{{ $series }}</span><br>
-                <span>{{ $sale_date }}</span><br>
-                <span>{{ $type }}</span><br>
+                <p>Prezzo: {{ $price }}</p>
+                <span>Serie: {{ $series }}</span><br>
+                <span>Pubblicazione: {{ $sale_date }}</span><br>
+                <span>Categoria: {{ $type }}</span><br>
             </div>
         </div>
     </div>
